@@ -5,7 +5,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 4005;
+const port = process.env.PORT;
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const api = require('./config/axios');
