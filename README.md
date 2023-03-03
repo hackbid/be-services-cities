@@ -1,2 +1,0 @@
-# cities
-services-cities

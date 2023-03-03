@@ -8,7 +8,7 @@ api.interceptors.request.use(
         //edit headers
         config.headers['Content-Type'] = 'application/json';
         config.headers['Accept'] = 'application/json';
-        config.headers['key'] = process.env.RAJAONGKIR_KEY;
+        config.headers['key'] = 'd0d80a4b96a0f1fcefdd1c83266e3a66';
         return config;
     },
     function (error) {
