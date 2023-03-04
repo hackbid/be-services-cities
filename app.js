@@ -15,8 +15,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(router)
 
-app.listen(port, () => {
-  console.log(`Cities service listening at http://localhost:${port}`);
-});
+// app.listen(port, () => {
+//   console.log(`Cities service listening at http://localhost:${port}`);
+// });
 
-// module.exports = app;
+module.exports = app;

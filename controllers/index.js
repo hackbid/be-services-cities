@@ -4,9 +4,10 @@ class Controller {
   static async GetProvince(req, res) {
     try {
       const { data } = await api.get("/province");
+
       res.status(200).json(data.rajaongkir.results);
     } catch (err) {
-      res.status(500).json({ message: "Internal Server Error" });
+      // console.log(err);
     }
   }
 
@@ -15,7 +16,7 @@ class Controller {
       const { data } = await api.get("/city");
       res.status(200).json(data.rajaongkir.results);
     } catch (err) {
-      res.status(500).json({ message: "Internal Server Error" });
+      // res.status(500).json({ message: "Internal Server Error" });
     }
   }
 
@@ -24,7 +25,7 @@ class Controller {
       const { data } = await api.post("/cost", req.body);
       res.status(200).json(data.rajaongkir.results);
     } catch (err) {
-      res.status(500).json({ message: "Internal Server Error" });
+      // res.status(500).json({ message: "Internal Server Error" });
     }
   }
 }

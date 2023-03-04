@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "test": "jest --forceExit --detectOpenHandles",
-        "start": "node app.js"
+        "start": "node app.js",
+           "cover": "jest --collect-coverage --detectOpenHandles"
     },
     "keywords": [],
     "author": "",

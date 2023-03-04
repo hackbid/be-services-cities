@@ -6,6 +6,9 @@ describe("Testing connect to 3party raja ongkir", () => {
     const response = await request(app).get("/province");
     expect(response.status).toBe(200);
   });
+  
+
+
   it("GET /city", async () => {
     const response = await request(app).get("/city");
     expect(response.status).toBe(200);
