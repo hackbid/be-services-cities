@@ -21,7 +21,7 @@ class Controller {
     static async GetCityById(req, res) {
         try {
             const { id } = req.params;
-            const { data } = await api.get(`/city?cities_id=${req.params.id}`);
+            const { data } = await api.get(`/city?cities_id=${id}`);
             res.status(200).json(data.rajaongkir.results);
         } catch (err) {
             res.status(500).json({ message: 'Internal Server Error' });
